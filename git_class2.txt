@@ -1,0 +1,168 @@
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop
+$ cd Repository
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        renamed:    Readme.txt -> Readme.md
+
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ ls -lart
+total 15
+-rw-r--r-- 1 Kiran 197121 28 Jun  1 16:08 Readme.md
+-rw-r--r-- 1 Kiran 197121 11 Jun  1 16:30 .gitignore
+-rw-r--r-- 1 Kiran 197121  7 Jun  1 16:32 sample.txt
+drwxr-xr-x 1 Kiran 197121  0 Jun  1 16:35 ./
+drwxr-xr-x 1 Kiran 197121  0 Jun  2 14:48 ../
+drwxr-xr-x 1 Kiran 197121  0 Jun  4 11:37 .git/
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git remote -v
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git log
+commit 886c22b3d70714f8b4780447415b41256ea14a1f (HEAD -> master)
+Author: Basava Kiran <basavakiran134@gmail.com>
+Date:   Wed Jun 1 16:18:10 2022 +0530
+
+    Deleting file
+
+commit eccb92ea9a941fa6b4d6a4c375c24e5339ed95a0
+Author: Basava Kiran <basavakiran134@gmail.com>
+Date:   Wed Jun 1 14:44:57 2022 +0530
+
+    Second commit
+
+commit 47e6867fd9b2a739f68a6c948bc9c5932671851d
+Author: Basava Kiran <basavakiran134@gmail.com>
+Date:   Wed Jun 1 14:38:05 2022 +0530
+
+    First Commit
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git remote add origin https://github.com/Basavakiran134/PersonalCounterApplication.git
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git remote -v
+origin  https://github.com/Basavakiran134/PersonalCounterApplication.git (fetch)
+origin  https://github.com/Basavakiran134/PersonalCounterApplication.git (push)
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git remote remove origin
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git remote add origin_remote https://github.com/Basavakiran134/PersonalCounterApplication.git
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git remote -v
+origin_remote   https://github.com/Basavakiran134/PersonalCounterApplication.git (fetch)
+origin_remote   https://github.com/Basavakiran134/PersonalCounterApplication.git (push)
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git remote remove origin_remote
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git remote add origin https://github.com/Basavakiran134/PersonalCounterApplication.git
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git remote -v
+origin  https://github.com/Basavakiran134/PersonalCounterApplication.git (fetch)
+origin  https://github.com/Basavakiran134/PersonalCounterApplication.git (push)
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (9/9), 740 bytes | 74.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Basavakiran134/PersonalCounterApplication.git
+ * [new branch]      master -> master
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git push origin master
+fatal: unable to access 'https://github.com/Basavakiran134/PersonalCounterApplication.git/': Could not resolve host: github.com
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git push origin master
+
+fatal: unable to access 'https://github.com/Basavakiran134/PersonalCounterApplication.git/': Could not resolve host: github.com
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git push origin master
+Everything up-to-date
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git log
+commit 886c22b3d70714f8b4780447415b41256ea14a1f (HEAD -> master, origin/master)
+Author: Basava Kiran <basavakiran134@gmail.com>
+Date:   Wed Jun 1 16:18:10 2022 +0530
+
+    Deleting file
+
+commit eccb92ea9a941fa6b4d6a4c375c24e5339ed95a0
+Author: Basava Kiran <basavakiran134@gmail.com>
+Date:   Wed Jun 1 14:44:57 2022 +0530
+
+    Second commit
+
+commit 47e6867fd9b2a739f68a6c948bc9c5932671851d
+Author: Basava Kiran <basavakiran134@gmail.com>
+Date:   Wed Jun 1 14:38:05 2022 +0530
+
+    First Commit
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ cat Readme.txt
+cat: Readme.txt: No such file or directory
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git mv Readme.md Readme.txt
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ cat Readme.txt
+First File
+Second Content
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 656 bytes | 4.00 KiB/s, done.
+From https://github.com/Basavakiran134/PersonalCounterApplication
+ * branch            master     -> FETCH_HEAD
+   886c22b..f51623e  master     -> origin/master
+Updating 886c22b..f51623e
+Fast-forward
+ Readme.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ cat Readme.txt
+First File
+Second Content
+Third Content
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ git fetch origin master
+From https://github.com/Basavakiran134/PersonalCounterApplication
+ * branch            master     -> FETCH_HEAD
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$ cat Readme.txt
+First File
+Second Content
+Third Content
+
+Kiran@DESKTOP-2GS90TA MINGW64 ~/Desktop/Repository (master)
+$

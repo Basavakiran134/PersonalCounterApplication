@@ -1,0 +1,145 @@
+ 2  df -h
+    3  clear
+    4  mkdir gitrepo
+    5  cd gitrepo/
+    6  ls -lart
+    7  git init
+    8  ls -lart
+    9  ls -lart
+   10  history
+   11  clear
+   12  git config --global --list
+   13  git config --local --list
+   14  git config --system --list
+   15  ls -lart
+   16  clear
+   17  git config --global --list
+   18  git config --global user.name "Basava Kiran"
+   19  git config --global  user.email "basavakiran134@gmail.com"
+   20  git config --global --list
+   21  ls -lart
+   22  clear
+   23  cd git
+   24  cd gitrepo/
+   25  cd Desktop
+   26  cd Desktop/
+   27  cd..
+   28  ..
+   29  clear
+   30  cd..
+   31  cd
+   32  cd Desktop
+   33  cd git
+   34  cd gitrepo/
+   35  cd git/
+   36  cd .git/
+   37  cd..
+   38  cd
+   39  cd gitrepo
+   40  cd gitrepo/
+   41  cd Desktop/
+   42  cd gitrepo/
+   43  clear
+   44  ls -lart
+   45  git config --global --list
+   46  git config --local --list
+   47  cat ~/.gitconfig
+   48  cat .git/config
+   49  git status
+   50  cd .git/
+   51  cd..
+   52  cd ..
+   53  git status
+   54  echo "First file"
+   55  echo "First file" >> Readme.txt
+   56  ls -lart
+   57  git status
+   58  cat Readme.txt
+   59  git add Readme.txt
+   60  git add .
+   61  git status
+   62  git status
+   63  git commit -m "First commit"
+   64  git status
+   65  cat Readme.txt
+   66  echo "Second Content"
+   67  git status
+   68  echo "Second Content" >> Readme.txt
+   69  git status
+   70  git commit -m "Second Commit"
+   71  git add Readme.txt
+   72  git status
+   73  git commit -m "Second Commit"
+   74  git status
+   75  ls -lart
+   76  cat index
+   77  git log
+   78  git log --oneline
+   79  echo "Third Content"
+   80  echo "Third Content" >> Readme.txt
+   81  git status
+   82  git diff
+   83  git diff --staged
+   84  git add Readme.txt
+   85  git diff --staged
+   86  echo "Sample file"
+   87  echo "Sample file" >> sample.txt
+   88  git status
+   89  git diff
+   90  git diff --staged
+   91  git add Sample.txt
+   92  git diff --staged
+   93  git add sample.txt
+   94  git diff --staged
+   95  git log
+   96  git diff a02796bede1cffa16eda56cd382705c4991c10c4
+   97  git diff 04ad238b1c4f01ac08aba44abcefd1a5f674c596
+   98  git status
+   99  git restore --staged Readme.txt
+  100  git status
+  101  git restore Readme.txt
+  102  git status
+  103  git reset --hard
+  104  git status
+  105  echo "Sample">>simple.txt
+  106  git status
+  107  git clean
+  108  git status
+  109  ls -lart
+  110  git clean
+  111  git clean -f
+  112  git status
+  113  git log
+  114  git status
+  115  git commit --amend
+  116  git commit --amend -m "Second new Commit"
+  117  git log
+  118  echo "sample" >> "sample.txt"
+  119  git add sample.txt
+  120  git status
+  121  git commit --ammend
+  122  git commit --amend
+  123  git log
+  124  git reset --hard
+  125  git log
+  126  git show b17e0d88625904d1da25b579f4e0110d9182c97f
+  127  ls -lart
+  128  git rm sample.txt
+  129  git status
+  130  ls -lart
+  131  git commit -m "Deleting File"
+  132  git status
+  133  ls -lart
+  134  git log --oneline
+  135  ls -lart
+  136  echo "sample.txt" >> .gitignore
+  137  git add .gitignore
+  138  git status
+  139  ls -lart
+  140  echo "sample" >> sample.txt
+  141  cat .gitignore
+  142  git status
+  143  ls -lart
+  144  git mv sample.txt sample
+  145  git mv Readme.txt Readme.md
+  146  git status
